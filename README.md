@@ -8,7 +8,7 @@ You can import Dift into your script by adding
 ```import Dift```
 To read a data from a file you can use the ```readData()``` function
 The ```readData()``` function takes one main arguments and three optional arguments
-# 1.file
+## 1.file
 the main argument that ```readData()``` function takes is the file to read the data fron and the file should be like this
 ```
 Student's Name : Alex Corey
@@ -22,7 +22,7 @@ import Dift
 file = open('details.txt','r')
 dict = Dift.readData(file)
 ```
-# 2.ctype
+## 2.ctype
 This is an optional argument that you can enable to store int values as int and disable to store int values as str in the dictionary
 Enabled by default
 
@@ -30,13 +30,13 @@ Example:-
 ```
 d = readData(file,ctype=False)
 ```
-# 3.seperator
+## 3.seperator
 
 It is a string argument which requires a sign to be used by the library to seperate keys from values the default is ```:```
 ```
 d = readData(file,seperator=":")
 ```
-# 4.ignore
+## 4.ignore
 This optional arguments is used to enable or disable the error that occurs when you didn't used the right seperator in the file
 True by default
 
