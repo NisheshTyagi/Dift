@@ -88,5 +88,5 @@ True by default
 ``` 
 
 d = readData(file,ignore=True)
->>>>>>> da9c8ac83d56f8bf59b6f15975b45cb13640579d
+
 ```
