@@ -86,7 +86,5 @@ This optional arguments is used to enable or disable the error that occurs when 
 True by default
 
 ``` 
-
 d = readData(file,ignore=True)
-
 ```
