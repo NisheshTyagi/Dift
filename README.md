@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Installation
 ``` pip install Dift```
 # Introduction
