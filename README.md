@@ -49,4 +49,4 @@ import Dift
 file = open('details.txt', 'r') 
 data = Dift.readData(file)
 ```
-n this example, the contents of the details.txt file are read and stored in a dictionary called data. The values in the file will be stored as integers if ctype is set to True, and the separator used in the file is a colon (:).
+in this example, the contents of the details.txt file are read and stored in a dictionary called data. The values in the file will be stored as integers if ctype is set to True, and the separator used in the file is a colon (:).
