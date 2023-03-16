@@ -1,1 +1,0 @@
-from Dift.Dift import readData
