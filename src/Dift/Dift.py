@@ -30,9 +30,10 @@ def readData(file_path, ctype=True, separator=":", ignore=True) -> dict:
             
             if line.strip().startswith('#'):
                 continue
-
-            key, value = map(str.strip, line.strip().split(separator, maxsplit=1))
-
+            try:
+                key, value = map(str.strip, line.strip().split(separator, maxsplit=1))
+            except:
+                pass
             
             if ctype:
                 try:
@@ -44,3 +45,21 @@ def readData(file_path, ctype=True, separator=":", ignore=True) -> dict:
             data[key] = value
 
     return data
+
+def writeData(file_path,dictionary,separator=':'):
+    
+    with open(file_path,'w') as file:
+        
+        if separator.strip() == "":
+            separator = ":"
+        
+                
+        text_list = []
+        
+        for each in dictionary:
+            
+            seperated_text = f'{each} {separator} {dictionary[each]}\n'
+            text_list.append(seperated_text)
+            
+        joined_text = "".join(text_list)
+        file.write(joined_text)
